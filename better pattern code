@@ -1,0 +1,20 @@
+/*better code of the same patter*/
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int t=(n*2)-2;
+    
+    for(int i=0; i<=t; i++)
+    {
+        for(int j=0; j<=t; j++){
+            int temp = n-min(j, min(i, min((t-j),(t-i))));
+            cout<<temp<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
